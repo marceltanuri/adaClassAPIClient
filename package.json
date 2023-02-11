@@ -1,0 +1,19 @@
+{
+  "name": "adaclassclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-replace": "^1.1.4",
+    "minify": "^9.2.0",
+    "webpack": "^5.75.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
