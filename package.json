@@ -1,11 +1,15 @@
 {
   "name": "ada-class-client",
-  "version": "6.6.0",
+  "version": "6.7.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marceltanuri/adaClassAPIClient"
+  },
+  "author": "marcel.tanuri@gmail.com",
   "license": "ISC"
 }
