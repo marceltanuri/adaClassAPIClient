@@ -7,7 +7,7 @@ Provides a client framework to consume ADA Class API
 
 ### Example os use
 
-```
+```javascript
     import * as ada from "ada-class-client"
 
     async example(url, user, pass, turmaId) {
