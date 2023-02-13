@@ -24,4 +24,4 @@ Provides a client framework to consume ADA Class API
 
 ## A full example of usage:
 ### Sending attendance list automatically from google meet to ada class via API : 
-<a href="https://github.com/marceltanuri/class-auto-attendance" target="_blank">https://github.com/marceltanuri/class-auto-attendance</a>
+https://github.com/marceltanuri/class-auto-attendance
