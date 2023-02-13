@@ -14,9 +14,13 @@ export default class Attendances {
             this.#client = client
     }
 
-    async getTodayAttendances(turmaId) {
+    async getAttendanceForTodaysLesson(turmaId) {
         const todayLesson = await this.#lessons.getTodayLesson(turmaId)
         return await this.#client.getJSON(`/Turma/${turmaId}/lessons/${todayLesson.uuid}/attendances`)
+    }
+
+    async setAttendanceForTodaysLesson(studentsIDsList) {
+        // post attendanceList
     }
 
 }

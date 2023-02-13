@@ -17,7 +17,7 @@ export default class Lessons {
         let todayLesson = {}
         await lessons.forEach(async lesson => {
             const isTodaysLesson = DateUtil.isSameDay(new Date(lesson.date), new Date());
-            if (isTodaysLesson)
+            //if (isTodaysLesson)
                 todayLesson = lesson
 
         })

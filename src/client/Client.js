@@ -1,17 +1,18 @@
+import Session from "./Session";
 
 export default class Client {
 
-    constructor(url, authToken){
-        this.url = url
-        this.authToken = authToken
+    constructor(session){
+        if(session instanceof Session)
+            this.session = session
     }
 
     async getJSON(path) {
-        return await fetch(this.url + path, {
+        return await fetch(this.session.baseURL + path, {
             "headers": {
                 "accept": "application/json",
                 "accept-language": "en-US,en;q=0.9,pt-PT;q=0.8,pt;q=0.7",
-                "authorization": "Bearer " + this.authToken,
+                "authorization": "Bearer " + this.session.authToken,
                 "cache-control": "no-cache",
                 "pragma": "no-cache",
                 "sec-fetch-dest": "empty",
