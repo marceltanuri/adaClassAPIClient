@@ -5,7 +5,7 @@ Provides a client framework to consume ADA Class API
 * Session authentication 
 * Authenticated requests to the API
 
-### Example os use
+### Example of use
 
 ```javascript
     import * as ada from "ada-class-client"
@@ -21,3 +21,7 @@ Provides a client framework to consume ADA Class API
         console.log(attendanceForTodaysLesson)
     }
 ```
+
+## A full example of usage:
+### Sending attendance list automatically from google meet to ada class via API : 
+https://github.com/marceltanuri/class-auto-attendance
