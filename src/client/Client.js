@@ -30,5 +30,26 @@ export default class Client {
 
     }
 
+    async post(path, body) {
+        return await fetch(this.session.baseURL + path, {
+            "headers": {
+                "accept": "application/json",
+                "accept-language": "en-US,en;q=0.9,pt-PT;q=0.8,pt;q=0.7",
+                "authorization": "Bearer " + this.session.authToken,
+                "cache-control": "no-cache",
+                "content-type": "application/json-patch+json",
+                "pragma": "no-cache",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-site"
+            },
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "body": body,
+            "method": "POST",
+            "mode": "cors",
+            "credentials": "include"
+        });
+    }
+
 
 }
