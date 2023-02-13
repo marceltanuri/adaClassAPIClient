@@ -18,13 +18,14 @@ export default class Lessons {
         await lessons.forEach(async lesson => {
             const isTodaysLesson = DateUtil.isSameDay(new Date(lesson.date), new Date());
             if (isTodaysLesson)
-                todayLesson = lesson
-
+            todayLesson = lesson
+            
         })
-
+        
         if(Object.keys(todayLesson).length === 0)
-            throw "No lesson found for today"
-
+        throw "No lesson found for today"
+        
+        console.debug(todayLesson)
         return todayLesson
 
     }
