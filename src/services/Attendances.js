@@ -1,14 +1,12 @@
-import Client from "../client/Client";
+import GeneralService from "./GeneralService";
 import Lessons from "./Lessons";
 
-export default class Attendances {
+export default class Attendances extends GeneralService {
 
     constructor(client, lessons) {
+        super(client)
         if (lessons instanceof Lessons)
             this.lessons = lessons
-
-        if (client instanceof Client)
-            this.client = client
     }
 
     async getAttendanceForTodaysLesson(turmaId) {

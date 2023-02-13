@@ -1,13 +1,10 @@
-import Client from "../client/Client";
 import DateUtil from "../util/DateUtil";
+import GeneralService from "./GeneralService";
 
-export default class Lessons {
-
-    #client = null
+export default class Lessons extends GeneralService{
 
     constructor(client) {
-        if (client instanceof Client)
-            this.#client = client
+        super(client)
     }
 
     async getTodayLesson(turmaId) {
@@ -31,7 +28,7 @@ export default class Lessons {
     }
 
     async getLessons(turmaId) {
-        return await this.#client.getJSON("/Turma/" + turmaId + "/lessons")
+        return await this.client.getJSON("/Turma/" + turmaId + "/lessons")
     }
 
 }
